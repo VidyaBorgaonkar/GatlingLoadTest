@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="sbt: io.gatling:gatling-sbt:2.2.2:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/scala_2.12/sbt_1.0/io.gatling/gatling-sbt/jars/gatling-sbt-2.2.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

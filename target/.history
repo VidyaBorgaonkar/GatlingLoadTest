@@ -1,0 +1,3 @@
+sbt gatling:test
+gatling:test
+exit

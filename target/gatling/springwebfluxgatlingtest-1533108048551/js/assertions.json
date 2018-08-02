@@ -1,0 +1,10 @@
+{
+  "simulation": "SpringWebFluxGatlingTest",
+  "simulationId": "springwebfluxgatlingtest",
+  "start": 1533108048551,
+  "description": "",
+  "scenarios": ["RecordedSimulation"],
+  "assertions": [
+
+  ]
+}
