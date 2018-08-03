@@ -5,15 +5,15 @@ import io.gatling.http.protocol.HttpProtocolBuilder
 
 class SpringWebFluxGatlingTest extends Simulation {
 
-  private val baseUrl1 = "http://54.173.16.160:8080"
-  private val baseUrl2 = "http://localhost:9000"
+  private val baseUrl1 = "http://18.212.204.178:8080"
+  private val baseUrl2 = "http://18.212.204.178:3000"
 
   private val contentType = "application/json"
   private val reactiveEndpoint = "/reactive/rates/TAJ"
   private val syncEndpoint = "/sync/rates/TAJ"
   val testTimeSecs = 20
   private val simUsers = 10000
-  private val requestCount = 4
+  private val requestCount = 8
 
 //.connectionHeader("keep-alive")
 
@@ -59,3 +59,6 @@ class SpringWebFluxGatlingTest extends Simulation {
   //setUp(scn2.inject(atOnceUsers(simUsers))).protocols(httpProtocol2)
 
 }
+
+
+//scp -i "perf.pem" centos@ec2-18-212-204-178.compute-1.amazonaws.com:/root/projects/GatlingLoadTest/target/gatling/springwebfluxgatlingtest-1533270384922 test-reports-40000
