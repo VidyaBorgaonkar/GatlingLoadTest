@@ -60,5 +60,3 @@ class SpringWebFluxGatlingTest extends Simulation {
 
 }
 
-
-//scp -i "perf.pem" centos@ec2-18-212-204-178.compute-1.amazonaws.com:/root/projects/GatlingLoadTest/target/gatling/springwebfluxgatlingtest-1533270384922 test-reports-40000
