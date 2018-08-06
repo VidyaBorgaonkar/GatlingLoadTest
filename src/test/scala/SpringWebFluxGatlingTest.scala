@@ -13,7 +13,7 @@ class SpringWebFluxGatlingTest extends Simulation {
   private val syncEndpoint = "/sync/rates/TAJ"
   val testTimeSecs = 20
   private val simUsers = 10000
-  private val requestCount = 8
+  private val requestCount = 10
 
 //.connectionHeader("keep-alive")
 
