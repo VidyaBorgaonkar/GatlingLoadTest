@@ -54,9 +54,9 @@ class SpringWebFluxGatlingTest extends Simulation {
     }
 
 
- setUp(scn1.inject(atOnceUsers(simUsers))).protocols(httpProtocol1)
+ //setUp(scn1.inject(atOnceUsers(simUsers))).protocols(httpProtocol1)
 
-  //setUp(scn2.inject(atOnceUsers(simUsers))).protocols(httpProtocol2)
+  setUp(scn2.inject(atOnceUsers(simUsers))).protocols(httpProtocol2)
 
 }
 
