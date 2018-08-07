@@ -5,8 +5,11 @@ import io.gatling.http.protocol.HttpProtocolBuilder
 
 class SpringWebFluxGatlingTest extends Simulation {
 
-  private val baseUrl1 = "http://34.207.187.204:8080"
-  private val baseUrl2 = "http://34.207.187.204:3000"
+  private val baseUrl1 = "http://54.162.188.147:8080"
+  private val baseUrl2 = "http://54.162.188.147:3000"
+
+//  private val baseUrl1 = "http://localhost:8080"
+//  private val baseUrl2 = "http://localhost:3000"
 
   private val contentType = "application/json"
   private val reactiveEndpoint = "/reactive/rates/TAJ"
@@ -54,9 +57,9 @@ class SpringWebFluxGatlingTest extends Simulation {
     }
 
 
- //setUp(scn1.inject(atOnceUsers(simUsers))).protocols(httpProtocol1)
+ setUp(scn1.inject(atOnceUsers(simUsers))).protocols(httpProtocol1)
 
-  setUp(scn2.inject(atOnceUsers(simUsers))).protocols(httpProtocol2)
+  //setUp(scn2.inject(atOnceUsers(simUsers))).protocols(httpProtocol2)
 
 }
 
